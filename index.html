@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Nutritioncorp</h1>
+    <p id="description">Thank you for your time!</p>
+    <form id="survey-form">
+      <fieldset>
+      <legend>Survey Form</legend>
+      <label id="name-label">Name</label>
+      <input id= "name"  class="input-question" type= "text" placeholder= "Enter your name."required/>
+
+      <label id="email-label" >Email</label>
+      <input id= "email" class="input-question" type= "email" placeholder="Enter your e-mail."required/>
+
+      <label id="number-label">Age</label>
+      <input id= "number" class="input-question" type= "number" min= "0" max= "120" placeholder= "Age."/>
+
+      <legend>Where did you hear about Nutritioncorp?</legend>
+      <select id="dropdown">
+        <option>Select an option</option>
+        <option>Friends</option>
+        <option>News</option>
+        <option>Internet</option>
+        <option>Other</option>
+      </select>
+
+      <legend>Would you recomend Nutritioncorp to a friend?</legend>
+      <input type="radio" name="radio" value="yes"/>
+      <label class="radio-option">Yes</label>
+      <input type="radio" name="radio" value="no"/>
+      <label class="radio-option">No</label>
+
+      <legend>What is your favorite product from our company? (you can choose more than one)</legend>
+      <div class= "checkbox-container">
+      <input type= "checkbox" name= "checkbox" value="energy-drink"/>
+      <label class="checkbox-option">Energy drink</label>
+      </div>
+      <div class= "checkbox-container">
+      <input type= "checkbox" name= "checkbox" value="vitamins"/>
+      <label class="checkbox-option">Vitamins</label>
+      </div>
+      <div class= "checkbox-container">
+      <input type= "checkbox" name= "checkbox" value="whey-protein"/>
+      <label class="checkbox-option">Whey Protein</label>
+      </div>
+      <div class= "checkbox-container">
+      <input type= "checkbox" name= "checkbox" value="protein-bar"/>
+      <label class="checkbox-option">Protein Bar</label>
+      </div>
+
+      <legend>Use that space to make suggestions or feedback!</legend>
+      <textarea></textarea>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
